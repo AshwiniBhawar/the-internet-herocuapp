@@ -8,16 +8,22 @@ import pageObjects.BasePage;
 
 public class ActionClass extends BasePage{
 	
-	public Actions act;
+	public static Actions act;
 		
 	public ActionClass(WebDriver driver){
 		super(driver);
 	}
 	
-	public void rightClick(WebDriver driver, WebElement ele) {
+	public static void rightClick(WebDriver driver, WebElement ele) {
 		act= new Actions(driver);
 		act.contextClick(ele).perform();
 	}
 	
-
+	public static void dragAndDrop(WebDriver driver, WebElement src, WebElement dest) {
+		act= new Actions(driver);
+		act.dragAndDrop(src, dest).perform();
+	}
+	
+	
+	
 }

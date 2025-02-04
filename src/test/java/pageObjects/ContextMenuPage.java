@@ -24,9 +24,8 @@ public class ContextMenuPage extends BasePage {
 	}
 	
 	public void box_RightClick() {
-		
-		ActionClass ac= new ActionClass(driver);
-		ac.rightClick(driver, box);
+	
+		 ActionClass.rightClick(driver, box);
 	}
 	
 	public String accept_Alert() {

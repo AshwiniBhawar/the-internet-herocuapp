@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC003_ContextMenu">
+      <class name="testCases.TC005_DragAndDrop">
         <methods>
           <include name="tearDown"/>
-          <include name="context_menu_validation"/>
+          <include name="dragAndDropElement"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- testCases.TC003_ContextMenu -->
+      </class> <!-- testCases.TC005_DragAndDrop -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
