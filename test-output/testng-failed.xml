@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="testCases.TC005_DragAndDrop">
+      <class name="testCases.TC006_Dropdown">
         <methods>
+          <include name="dropdownTest"/>
           <include name="tearDown"/>
-          <include name="dragAndDropElement"/>
           <include name="setUp"/>
         </methods>
-      </class> <!-- testCases.TC005_DragAndDrop -->
+      </class> <!-- testCases.TC006_Dropdown -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
