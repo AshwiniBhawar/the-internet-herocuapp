@@ -11,7 +11,7 @@ public class TC003_ContextMenu extends BaseClass{
 	@Test
 	public void context_menu_validation() {
 		try {
-		System.out.println("TC003 started");
+		System.out.println("****TC003 Started****");
 		ContextMenuPage cm= new ContextMenuPage(driver);
 		
 		cm.clk_ContextMenu();
@@ -20,7 +20,7 @@ public class TC003_ContextMenu extends BaseClass{
 		System.out.println(alertText);
 		Assert.assertEquals(alertText, "You selected a context menu");
 				
-		System.out.println("TC003 Finished");
+		System.out.println("****TC003 Finished****");
 		}
 		catch(Exception e) {
 			System.out.println(e.getMessage());

@@ -11,7 +11,7 @@ public class TC002_BasicAuth extends BaseAuthClass{
 	@Test
 	public void basic_auth() throws InterruptedException {
 		try {
-		System.out.println("TC002 started");
+		System.out.println("****TC002 started****");
 		
 		BasicAuthPage ba= new BasicAuthPage(driver);
 		ba.clk_Basic_Auth_Link();
@@ -25,7 +25,7 @@ public class TC002_BasicAuth extends BaseAuthClass{
 		String congratstext=ba.validate_BasicAuth_Congrajulation_Message();
 		Assert.assertEquals(congratstext, "Congratulations! You must have the proper credentials.");
 		
-		System.out.println("TC002 finished");
+		System.out.println("****TC002 finished****");
 		}
 		
 		catch(Exception e) {
